@@ -1,10 +1,10 @@
 import React from 'react'
-import Nav from './Nav'
+import Nav from '../Scetion/Nav'
 
 function Header() {
   return (
     <header>
-        <Nav></Nav>
+        <Nav />
     </header>
   )
 }

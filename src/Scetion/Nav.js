@@ -4,7 +4,7 @@ import styled from 'styled-components'
 function Nav() {
   return (
     <Navbar>
-        <img src='./icons_assets/logo.svg'></img>
+        <Img src='./icons_assets/logo.svg'></Img>
         <Ul>
             <li><A href='/'>Home</A></li>
             <li><A href='/'>About</A></li>
@@ -17,7 +17,14 @@ function Nav() {
   )
 }
 
-export default Nav
+export default Nav;
+
+const Img = styled.img`
+
+    height: auto;
+    weiht: 100%;
+
+`
 
 const Navbar = styled.nav`
 
@@ -44,5 +51,14 @@ const Ul = styled.ul`
 const A = styled.a`
 
     text-decoration: none;
+    color: #000;
+    text-align: center;
+
+    /* Lead Text */
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 
 `
