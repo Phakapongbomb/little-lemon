@@ -38,7 +38,7 @@ const Div = styled.div`
 
   display: flex;
   height: 362px;
-  padding: 40px 290px 0px;
+  padding: 5vh 10vh 0px;
   justify-content: center;
   align-items: flex-start;
   gap: 220px;
@@ -69,7 +69,7 @@ const SubHead = styled.h3`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 20px 0px;
+  margin: 0px 0px;
 
 
 `
