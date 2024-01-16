@@ -19,6 +19,7 @@ function HeroSection() {
           </Paragraph>
           <Button
           text="Reserv a Table"
+          link="/Reservation"
           />
         </div>
         <Img src='./icons_assets/restauranfood.jpg'></Img>
@@ -29,9 +30,10 @@ function HeroSection() {
                 <h1 className="text-black text-6xl font-medium font-['Markazi Text']">This weeks specials!</h1>
                 <Button
                     text='Online Menu'
+                    link="/Menu"
                 />
             </HeadText>
-            <div className='gap-20 justify-between items-start flex'>
+            <div className='mb-10 gap-20 justify-between items-start flex'>
                 <Card
                 img="./icons_assets/greek salad.jpg"
                 NameMenu="Greek salad"

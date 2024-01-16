@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <Navbar>
+    <Navbar className='p-2 gap-20'>
         <Link to="/"><img src='./icons_assets/logo.svg' className='h-auto' /></Link>
         <Ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/About'>About</Link></li>
-            <li><Link to='/Menu'>Menu</Link></li>
-            <li><Link to='/Reservation'>Reservation</Link></li>
-            <li><Link to='/OrderOnline'>Order online</Link></li>
-            <li><Link to='/Login'>Login</Link></li>
+            <li><Link className="text-center text-black text-lg font-medium font-['Karla']" to='/'>Home</Link></li>
+            <li><Link className="text-center text-black text-lg font-medium font-['Karla']" to='/About'>About</Link></li>
+            <li><Link className="text-center text-black text-lg font-medium font-['Karla']" to='/Menu'>Menu</Link></li>
+            <li><Link className="text-center text-black text-lg font-medium font-['Karla']" to='/Reservation'>Reservation</Link></li>
+            <li><Link className="text-center text-black text-lg font-medium font-['Karla']" to='/OrderOnline'>Order online</Link></li>
+            <li><Link className="text-center text-black text-lg font-medium font-['Karla']" to='/Login'>Login</Link></li>
         </Ul>
     </Navbar>
   )
@@ -26,8 +26,6 @@ const Navbar = styled.nav`
     display: flex;
     list-style-type: none;
     display: flex;
-    gap: 30px;
-    align-items: center;
     justify-content: center;
 
 `
