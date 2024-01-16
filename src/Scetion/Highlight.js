@@ -5,7 +5,7 @@ import Card from '../Assets/Card'
 
 function Highlight() {
   return (
-    <Div>
+    <div className='flex w-full h-auto justify-center items-center'>
         <Content className="w-screen h-full flex flex-col justify-center items-center gap-16 mt-32">
             <HeadText className="w-full h-20 flex justify-center gap-56 items-stretch flex">
                 <h1 className="text-black text-6xl font-medium font-['Markazi Text']">This weeks specials!</h1>
@@ -34,7 +34,7 @@ function Highlight() {
                 />
             </div>
         </Content>
-    </Div>
+    </div>
   )
 }
 
@@ -46,16 +46,5 @@ const HeadText = styled.div`
 `
 
 const Content = styled.div`
-
-`
-
-
-const Div = styled.div`
-
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
 
 `

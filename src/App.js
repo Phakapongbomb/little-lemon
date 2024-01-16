@@ -1,16 +1,15 @@
 import Main from "./components/Main";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
-
-
+import { Routes, Route } from "react-router-dom";
+import Nav from "./Scetion/Nav";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+      <>
+        <Nav />
+        <Main />
+        <Footer />
+      </>
   );
 }
 

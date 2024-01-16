@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 function Button({text}) {
   return (
-    <ButtonC>{text}</ButtonC>
+    <ButtonC className='px-8 py-2 border-2 rounded-lg border-Primary2 rounded-4 flex justify-center roumded-lg bg-Primary2 text-Secondary4 items-center text-base font-extrabold font-["Karla"]'>{text}</ButtonC>
   )
 }
 
@@ -11,20 +11,7 @@ export default Button
 
 const ButtonC = styled.button`
 
-  display: inline-flex;
-  padding: 10px 30px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  border: 0px solid transparent;
-  background: #f4ce14;
-  color: #333;
 
-  font-family: Karla;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
 
   & :hover {
 

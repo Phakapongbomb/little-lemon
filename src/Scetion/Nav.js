@@ -1,30 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from "react-router-dom";
+
 
 function Nav() {
   return (
     <Navbar>
-        <Img src='./icons_assets/logo.svg'></Img>
+        <Link to="/"><img src='./icons_assets/logo.svg' className='h-auto' /></Link>
         <Ul>
-            <li><A href='/'>Home</A></li>
-            <li><A href='/'>About</A></li>
-            <li><A href='/'>Menu</A></li>
-            <li><A href='/'>Reservation</A></li>
-            <li><A href='/'>Order online</A></li>
-            <li><A href='/'>Login</A></li>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/About'>About</Link></li>
+            <li><Link to='/Menu'>Menu</Link></li>
+            <li><Link to='/Reservation'>Reservation</Link></li>
+            <li><Link to='/OrderOnline'>Order online</Link></li>
+            <li><Link to='/Login'>Login</Link></li>
         </Ul>
     </Navbar>
   )
 }
 
 export default Nav;
-
-const Img = styled.img`
-
-    height: auto;
-    weiht: 100%;
-
-`
 
 const Navbar = styled.nav`
 
