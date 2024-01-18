@@ -4,12 +4,14 @@ import styled from 'styled-components'
 import Card from '../Assets/Card'
 import Testimonials from './Testimonials'
 
-function HeroSection({ date, availableTimes, people, occasion }) {
+function HeroSection({ state }) {
+  const { date, time, people, occasion } = state;
+
   return (
     <div>
       <Div className='flex bg-Primary1 justify-center pt-10 h-96'>
         <div className='flex flex-col justify-between pb-10'>
-          <TextHead>Little Lemon</TextHead>
+          <TextHead className='text-Primary2'>Little Lemon</TextHead>
           <SubHead>Chicago</SubHead>
           <Paragraph>
             We are a family owned Mediterranean restaurant,
@@ -17,7 +19,7 @@ function HeroSection({ date, availableTimes, people, occasion }) {
             recipes served with a modern
             twist.
           </Paragraph>
-          <h1>Date:{ date }Time: { availableTimes }People: { people }Occasion: { occasion }</h1>
+          <h1></h1>
           <Button
             text="Reserv a Table"
             link="/Reservation"
@@ -26,8 +28,13 @@ function HeroSection({ date, availableTimes, people, occasion }) {
         <Img src='./icons_assets/restauranfood.jpg'></Img>
       </Div>
       <div className='flex w-full h-auto justify-center items-center'>
-        <Content className="w-screen h-full flex flex-col justify-center items-center gap-16 mt-32">
-            <HeadText className="w-full  flex justify-center gap-56 items-stretch flex">
+        <Content className="w-screen h-full flex flex-col justify-center items-center gap-16 mt-24">
+        {date && time && people && occasion && (
+          <Button
+            text={`Date: ${date}, Time: ${time}, People: ${people}, Occasion: ${occasion}`}
+          />
+        )}
+            <HeadText className="w-full  flex justify-center gap-60 items-stretch flex">
                 <h1 className="text-black text-6xl font-medium font-['Markazi Text']">This weeks specials!</h1>
                 <Button
                   text='Online Menu'
@@ -80,7 +87,6 @@ const Div = styled.div`
 
 const TextHead = styled.h1`
 
-  color: #F4CE14;
   /* Display Title */
   font-family: Markazi Text;
   font-size: 64px;
