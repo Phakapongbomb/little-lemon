@@ -4,11 +4,11 @@ import styled from 'styled-components'
 import Card from '../Assets/Card'
 import Testimonials from './Testimonials'
 
-function HeroSection() {
+function HeroSection({ date, availableTimes, people, occasion }) {
   return (
     <div>
-      <Div>
-        <div>
+      <Div className='flex bg-Primary1 justify-center pt-10 h-96'>
+        <div className='flex flex-col justify-between pb-10'>
           <TextHead>Little Lemon</TextHead>
           <SubHead>Chicago</SubHead>
           <Paragraph>
@@ -17,9 +17,10 @@ function HeroSection() {
             recipes served with a modern
             twist.
           </Paragraph>
+          <h1>Date:{ date }Time: { availableTimes }People: { people }Occasion: { occasion }</h1>
           <Button
-          text="Reserv a Table"
-          link="/Reservation"
+            text="Reserv a Table"
+            link="/Reservation"
           />
         </div>
         <Img src='./icons_assets/restauranfood.jpg'></Img>
@@ -29,28 +30,28 @@ function HeroSection() {
             <HeadText className="w-full  flex justify-center gap-56 items-stretch flex">
                 <h1 className="text-black text-6xl font-medium font-['Markazi Text']">This weeks specials!</h1>
                 <Button
-                    text='Online Menu'
-                    link="/Menu"
+                  text='Online Menu'
+                  link="/Menu"
                 />
             </HeadText>
             <div className='mb-10 gap-20 justify-between items-start flex'>
                 <Card
-                img="./icons_assets/greek salad.jpg"
-                NameMenu="Greek salad"
-                price="$12.99"
-                Ptext="The famous greek salad of crispy lettuce, pepers, olives and our Chicago style feta cheese. garlic and rosemary croutons"
+                  img="./icons_assets/greek salad.jpg"
+                  NameMenu="Greek salad"
+                  price="$12.99"
+                  Ptext="The famous greek salad of crispy lettuce, pepers, olives and our Chicago style feta cheese. garlic and rosemary croutons"
                 />
                 <Card
-                img="./icons_assets/bruchetta.svg"
-                NameMenu="Bruchetta"
-                price="$5.99"
-                Ptext="Our Bruschetta is made form grilled bread that has been smeared with garlic and seasoned with salt and olive oil."
+                  img="./icons_assets/bruchetta.svg"
+                  NameMenu="Bruchetta"
+                  price="$5.99"
+                  Ptext="Our Bruschetta is made form grilled bread that has been smeared with garlic and seasoned with salt and olive oil."
                 />
                 <Card
-                img="./icons_assets/lemon dessert.jpg"
-                NameMenu="Greek salad"
-                price="$12.99"
-                Ptext="The famous greek salad of crispy lettuce, pepers, olives and our Chicago style feta cheese. garlic and rosemary croutons"
+                  img="./icons_assets/lemon dessert.jpg"
+                  NameMenu="Greek salad"
+                  price="$12.99"
+                  Ptext="The famous greek salad of crispy lettuce, pepers, olives and our Chicago style feta cheese. garlic and rosemary croutons"
                 />
             </div>
         </Content>
@@ -73,14 +74,7 @@ const Img = styled.img`
 
 const Div = styled.div`
 
-  display: flex;
-  height: 362px;
-  padding: 5vh 10vh 0px;
-  justify-content: center;
-  align-items: flex-start;
   gap: 220px;
-  flex-shrink: 0;
-  background: #495e57;
 
 `
 
