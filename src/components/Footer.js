@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className=" h-[50vh] w-full bg-Secondary3 justify-center items-center inline-flex">
       <div className="grow shrink basis-0 justify-center items-start gap-48 flex">
-        <img className="h-96 " src="./icons_assets/secondary.png"/>
+        <img className="h-48" src="./icons_assets/secondary.png"/>
         <div className="w-28 h-full pt-px flex-col justify-end items-start gap-8 inline-flex text-Secondary4">
           <div className="text-zinc-100 text-xl font-extrabold font-['Karla'] uppercase text-Primary2">Navigation</div>
           <div className="flex-col justify-start items-start gap-4 inline-flex">

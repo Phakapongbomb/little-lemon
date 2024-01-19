@@ -2,8 +2,9 @@ import React from 'react'
 
 function About() {
   return (
-    <div>About</div>
+    <div className='flex justify-center'>About</div>
   )
 }
 
 export default About
+
