@@ -2,7 +2,7 @@ import React from 'react'
 
 function OrderOnline() {
   return (
-    <div>OrderOnline</div>
+    <div className='flex justify-center'>OrderOnline</div>
   )
 }
 
